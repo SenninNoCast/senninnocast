@@ -79,7 +79,7 @@ body {
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+	/* [disabled]border-top: 20px solid #e44d26; */
 }
 
 .header-container,
@@ -136,8 +136,11 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
-    padding: 0px 5% 10px;
+	color: white;
+	/* [disabled]padding-bottom: 10px; */
+	/* [disabled]padding-left: 5%; */
+	/* [disabled]padding-right: 5%; */
+	padding-top: 0px;
 }
 
 .footer-container footer {
@@ -156,24 +159,49 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
-.twitter-follow-button,.facebook-follow-button, .google-follow-button {
-	text-decoration:none;
-	display:inline-block;
-	color:#333;
-	text-align:center;
-	font:13px/16px arial,sans-serif;
-	font-weight:bold;
-	white-space:nowrap;
-	vertical-align:top;
-	margin-right:5px;
-	margin-top:8px;
+.twitter-follow-button,.facebook-follow-button, .google-follow-button, .soundcloud-follow-button {
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	font: 13px/16px arial,sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	vertical-align: top;
+	margin-right: 5px;
+	/* [disabled]margin-top:8px; */
 }
-
-.google-follow-button span {
-	display:inline-block;
+.msociaux li a {
+	text-indent: -9999px;
 }
-
+.soundcloud-follow-button {
+	background-image: url(../img/msociaux.png);
+	width: 305px;
+	height: 202px;
+	background-position: 0% 0%;
+	margin-right: -5px;
+}
+.twitter-follow-button {
+	width: 305px;
+	height: 302px;
+	background-image: url(../img/msociaux.png);
+	background-position: 0% 100%;
+	margin-right:-5px;
+	margin-top:-102px;
+}
+.facebook-follow-button {
+	width: 205px;
+	height: 303px;
+	background-image: url(../img/msociaux.png);
+	background-position: 100% 0%;
+}
+.google-follow-button {
+	width: 205px;
+	height: 200px;
+	background-image: url(../img/msociaux.png);
+	background-position: 100% 100%;
+}
 .noStyleList {
 	list-style-type:none;
 	margin-left:0;
@@ -193,11 +221,39 @@ small {
 }
 
 
+article header h1 {
+	display: none;
+}
 
-
-
-
-
+section h2 {
+	font-family: 'Nunito', sans-serif;
+}
+.main aside {
+	background-color:transparent;
+	border: 0 none;
+	box-shadow: none;
+	width: 525px;
+}
+.msociaux li {
+	display: inline;
+}
+.header-container,
+.footer-container,
+.main aside {
+	background: none;
+	border: 0 none;
+}
+h1.title {
+	color: black;
+	font-family: Papyrus;
+	font-size: 4.2em;
+	margin-bottom: 5px;
+}
+header small {
+	clear: left;
+	float:left;
+	font-size: 80%;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -245,9 +301,9 @@ small {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+	/* [disabled]-webkit-box-shadow: 0 5px 10px #aaa; */
+	/* [disabled]-moz-box-shadow: 0 5px 10px #aaa; */
+	/* [disabled] box-shadow: 0 5px 10px #aaa;*/
     }
 
 /* ============
@@ -268,13 +324,13 @@ small {
    ============ */
 
     .main article {
-        float: left;
-        width: 57%;
+	float: left;
+	/* [disabled]width: 57%; */
     }
 
     .main aside {
-        float: right;
-        width: 28%;
+	float: right;
+	/* [disabled]width: 28%; */
     }
 }
 
