@@ -258,6 +258,9 @@ form li {
 	display: inline;
 	width: 50%;	
 }
+.subscribe li {
+	display:inline;
+}
 
 /* ==========================================================================
    Media Queries
