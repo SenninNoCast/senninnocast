@@ -161,6 +161,12 @@ nav a:hover {
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
+@font-face {
+	font-family: 'Papyrus';
+	src: url('fonts/papyrus.wot');
+	src: local('Papyrus'), url('fonts/papyrus.wot') format('truetype');
+}
+
 .twitter-follow-button,.facebook-follow-button, .google-follow-button, .soundcloud-follow-button {
 	text-decoration: none;
 	display: inline-block;
@@ -245,7 +251,7 @@ section h2 {
 }
 h1.title {
 	color: black;
-	font-family: Papyrus;
+	font-family: Papyrus, fantasy;
 	font-size: 4.2em;
 	margin-bottom: 5px;
 }
