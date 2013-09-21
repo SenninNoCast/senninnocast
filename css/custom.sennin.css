@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+@font-face {
+	font-family: 'Papyrus';
+	src: url('fonts/papyrus.wot');
+	src: local('Papyrus'), url('fonts/papyrus.wot') format('truetype');
+}
+
+.twitter-follow-button,.facebook-follow-button, .google-follow-button, .soundcloud-follow-button {
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	font: 13px/16px arial,sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	vertical-align: top;
+	margin-right: 5px;
+	/* [disabled]margin-top:8px; */
+}
+.msociaux li a {
+	text-indent: -9999px;
+}
+.soundcloud-follow-button {
+	background-image: url(../img/msociaux.png);
+	_width: 305px;
+	_height: 202px;
+	background-position: 0% 0%;
+	_margin-right: -5px;
+}
+.twitter-follow-button {
+	_width: 305px;
+	_height: 302px;
+	background-image: url(../img/msociaux.png);
+	background-position: 0% 100%;
+	_margin-right:-5px;
+	_margin-top:-102px;
+}
+.facebook-follow-button {
+	_width: 205px;
+	_height: 303px;
+	background-image: url(../img/msociaux.png);
+	background-position: 100% 0%;
+}
+.google-follow-button {
+	_width: 205px;
+	_height: 200px;
+	background-image: url(../img/msociaux.png);
+	background-position: 100% 100%;
+}
+.noStyleList {
+	list-style-type:none;
+	margin-left:0;
+	padding:0;
+}
+.noStyleList li {
+	display:inline;
+}
+.space {
+	margin: 1em 0;
+}
+
+time {
+	font-size: small;
+	font-style: italic;
+}
+
+small {
+	font-size:small;
+}
+
+
+article header h1 {
+	display: none;
+}
+
+section h2 {
+	font-family: 'Nunito', sans-serif;
+}
+.main aside {
+	background-color:transparent;
+	border: 0 none;
+	box-shadow: none;
+	width: 525px;
+}
+.msociaux li {
+	display: inline;
+}
+.header-container,
+.footer-container,
+.main aside {
+	background: none;
+	border: 0 none;
+}
+#h1 {
+	height: 89px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	w_idth: 512px;
+}
+#h1 span {
+	background: url("../img/titre.png")no-repeat;
+	height: 89px;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	w_idth: 512px;
+}
+h1.title {
+	color: black;
+	font-family: Papyrus, fantasy;
+	font-size: 4.2em;
+	margin-bottom: 5px;
+}
+header small {
+	clear: left;
+	float:left;
+	font-size: 80%;
+}
+form li {
+	display: inline;
+	width: 50%;	
+}
+.subscribe li {
+	display:inline;
+}
